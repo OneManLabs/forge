@@ -6,6 +6,14 @@ You can change the theme, color, density, and font. You can also select an eleme
 
 Forge supports OpenAI and Anthropic models. You can select a different provider and model for each work phase.
 
+## Interface
+
+![Forge converts a selected design direction to a multi-file React project.](docs/media/forge-variation-board.jpg)
+
+The conversation, design directions, and generated files stay in one workspace.
+
+![Forge contains a design brief that is ready to send.](docs/media/forge-prompt-studio.jpg)
+
 ## Start Forge
 
 1. Install the dependencies.
