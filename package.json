@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.112.4",
-    "@types/diff": "^7.0.2",
+    "@types/diff": "^8.0.0",
     "diff": "^9.0.0",
     "jszip": "^3.10.1",
     "next": "^15.5.15",
