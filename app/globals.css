@@ -1,0 +1,200 @@
+/* Forge — design tokens (ported from the prototype's tokens.css) */
+
+:root {
+  --fs-10: 10px; --fs-11: 11px; --fs-12: 12px; --fs-13: 13px;
+  --fs-14: 14px; --fs-15: 15px; --fs-16: 16px; --fs-18: 18px;
+  --fs-20: 20px; --fs-24: 24px; --fs-28: 28px; --fs-32: 32px;
+  --fs-40: 40px; --fs-56: 56px;
+
+  --s-2: 2px; --s-4: 4px; --s-6: 6px; --s-8: 8px;
+  --s-10: 10px; --s-12: 12px; --s-16: 16px; --s-20: 20px;
+  --s-24: 24px; --s-32: 32px; --s-40: 40px; --s-48: 48px;
+  --s-56: 56px; --s-64: 64px; --s-80: 80px;
+
+  --accent:       oklch(0.85 0.19 126);
+  --accent-ink:   oklch(0.22 0.05 126);
+  --accent-soft:  oklch(0.85 0.19 126 / 0.15);
+  --accent-line:  oklch(0.85 0.19 126 / 0.4);
+
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+
+  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-body:    'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+}
+
+:root, .theme-dark {
+  --bg:          oklch(0.16 0.006 260);
+  --bg-raised:   oklch(0.19 0.006 260);
+  --bg-sunken:   oklch(0.13 0.006 260);
+  --bg-panel:    oklch(0.21 0.006 260);
+  --ink:         oklch(0.97 0.003 260);
+  --ink-muted:   oklch(0.72 0.006 260);
+  --ink-faint:   oklch(0.52 0.008 260);
+  --line:        oklch(0.30 0.006 260);
+  --line-soft:   oklch(0.24 0.006 260);
+  --selection:   oklch(0.82 0.18 126 / 0.25);
+  --canvas-bg:   oklch(0.22 0.006 260);
+  color-scheme: dark;
+}
+
+.theme-light {
+  --bg:          oklch(0.985 0.004 90);
+  --bg-raised:   oklch(1 0 0);
+  --bg-sunken:   oklch(0.955 0.006 90);
+  --bg-panel:    oklch(1 0 0);
+  --ink:         oklch(0.18 0.01 260);
+  --ink-muted:   oklch(0.45 0.01 260);
+  --ink-faint:   oklch(0.62 0.008 260);
+  --line:        oklch(0.88 0.006 260);
+  --line-soft:   oklch(0.93 0.006 260);
+  --selection:   oklch(0.82 0.18 126 / 0.3);
+  --canvas-bg:   oklch(0.97 0.004 90);
+  color-scheme: light;
+}
+
+.accent-lime   { --accent: oklch(0.85 0.19 126); --accent-ink: oklch(0.22 0.05 126); --accent-soft: oklch(0.85 0.19 126 / 0.15); --accent-line: oklch(0.85 0.19 126 / 0.4); }
+.accent-ember  { --accent: oklch(0.72 0.18 45);  --accent-ink: oklch(0.98 0.01 45);  --accent-soft: oklch(0.72 0.18 45 / 0.15);  --accent-line: oklch(0.72 0.18 45 / 0.4); }
+.accent-violet { --accent: oklch(0.68 0.19 290); --accent-ink: oklch(0.98 0.01 290); --accent-soft: oklch(0.68 0.19 290 / 0.15); --accent-line: oklch(0.68 0.19 290 / 0.4); }
+.accent-cyan   { --accent: oklch(0.82 0.13 210); --accent-ink: oklch(0.22 0.05 210); --accent-soft: oklch(0.82 0.13 210 / 0.15); --accent-line: oklch(0.82 0.13 210 / 0.4); }
+.accent-paper  { --accent: oklch(0.93 0.02 90);  --accent-ink: oklch(0.18 0.01 260); --accent-soft: oklch(0.93 0.02 90 / 0.4);   --accent-line: oklch(0.8 0.01 90 / 0.5); }
+
+.font-geometric {
+  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-body:    'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+}
+.font-editorial {
+  --font-display: 'Fraunces', 'Times New Roman', serif;
+  --font-body:    'Inter Tight', ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+}
+.font-mono-first {
+  --font-display: 'JetBrains Mono', ui-monospace, monospace;
+  --font-body:    'Inter Tight', ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+}
+.font-humanist {
+  --font-display: 'Instrument Serif', serif;
+  --font-body:    'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+}
+
+.density-comfy   { --pad-card: 20px; --pad-row: 14px; --gap: 16px; --h-bar: 48px; --h-btn: 34px; }
+.density-compact { --pad-card: 12px; --pad-row: 8px;  --gap: 10px; --h-bar: 40px; --h-btn: 28px; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--fs-14);
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+}
+::selection { background: var(--selection); color: var(--ink); }
+
+.mono    { font-family: var(--font-mono); font-feature-settings: "zero" 1, "ss01" 1; }
+.display { font-family: var(--font-display); letter-spacing: -0.01em; }
+
+.hairline      { border: 1px solid var(--line); }
+.hairline-soft { border: 1px solid var(--line-soft); }
+
+.btn {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--bg-raised);
+  color: var(--ink);
+  font: inherit;
+  font-family: var(--font-body);
+  height: var(--h-btn, 34px);
+  padding: 0 12px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
+  user-select: none;
+  font-size: var(--fs-13);
+}
+.btn:hover  { background: var(--bg-panel); border-color: var(--ink-faint); }
+.btn:active { transform: translateY(0.5px); }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: transparent; font-weight: 600; }
+.btn.primary:hover { background: var(--accent); filter: brightness(1.05); }
+.btn.ghost { background: transparent; border-color: transparent; color: var(--ink-muted); }
+.btn.ghost:hover { background: var(--bg-raised); color: var(--ink); }
+.btn.sm { height: 26px; padding: 0 8px; font-size: var(--fs-12); border-radius: var(--radius-xs); }
+.btn.icon { width: var(--h-btn, 34px); padding: 0; justify-content: center; }
+
+.kbd {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  padding: 1px 5px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  color: var(--ink-muted);
+  background: var(--bg-sunken);
+  min-width: 16px;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1.3;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  font-size: var(--fs-11);
+  color: var(--ink-muted);
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.chip .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+
+.scroll { scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+.scroll::-webkit-scrollbar { width: 8px; height: 8px; }
+.scroll::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
+.scroll::-webkit-scrollbar-track { background: transparent; }
+
+button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50%      { opacity: 1;   transform: scale(1.3); }
+}
+@keyframes blink-caret {
+  0%, 49%   { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.pulse-dot { animation: pulse-dot 1.4s ease-in-out infinite; }
+
+/* Code-view syntax tokens (used by lib/syntaxHighlight.ts) */
+.hl-tag     { color: oklch(0.78 0.13 230); }
+.hl-attr    { color: oklch(0.85 0.13 80); }
+.hl-str     { color: oklch(0.78 0.15 145); }
+.hl-comment { color: oklch(0.55 0.01 260); font-style: italic; }

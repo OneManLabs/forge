@@ -1,0 +1,28 @@
+{
+  "name": "forge-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remotion project — 65s cinematic demo video for Forge Design",
+  "scripts": {
+    "start": "remotion studio",
+    "render": "remotion render ForgeVideo out/forge-demo-1080p.mp4",
+    "render:4k": "remotion render ForgeVideo out/forge-demo-4k.mp4 --scale=2",
+    "still:poster": "remotion still ForgeVideo out/poster.png --frame=1920",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/bundler": "^4.0.0",
+    "@remotion/cli": "^4.0.0",
+    "@remotion/google-fonts": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "framer-motion": "^11.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.1",
+    "typescript": "^5.4.0"
+  }
+}
