@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@remotion/bundler": "^4.0.496",
-    "@remotion/cli": "^4.0.496",
+    "@remotion/cli": "^4.0.500",
     "@remotion/google-fonts": "^4.0.496",
     "@remotion/renderer": "^4.0.496",
     "framer-motion": "^11.0.0",
